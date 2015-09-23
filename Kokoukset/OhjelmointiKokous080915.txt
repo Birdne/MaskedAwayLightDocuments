@@ -1,0 +1,43 @@
+Tuntien kirjaus:
+	
+	
+Kommentointi:
+	Kyllä. Kaikki tarpeellinen.
+	
+Kieli:
+	Englanti
+	
+Paradigmat:
+	Opserver pattern
+	
+Liikkuminen:
+	Navmesh
+
+Tallennus:
+	Olioiden kaikki tieto dictionareihin
+	Serialisoidaan nämä tiedot
+	tallennusmuoto on csv
+
+Moninpeli:
+	Kaikki tehdään huomioiden moninpelin mahdollisuus
+	
+Taistelu:
+	Vain taitoja joita tulee kannossa olevista esineistä
+	
+Ternery operaattorit ja lamda lauseet:
+	Käyttöön
+	Vain yksi ternery, jos tarvii usempia sisäkkäin tehdään jollain muulla tavalla
+	
+Versionhallinta:
+	Windows tyyliset rivinvaihdot
+	Commitit englanniksi
+	kaikki käyttää
+	
+Muotoilu:
+	Skriptit, aliohjelmat ja luokan nimet: isolla alkukirjaimella
+	Muuttujan nimet: pienellä
+	Jos useampi sana nimissä aina uusi sana isolla alkukirjaimella
+	{} uudelle riville
+	2-tyhää riviä aliohjelman jälkeen
+	if ja aliohjelman nimen jälkeen välilyönti
+

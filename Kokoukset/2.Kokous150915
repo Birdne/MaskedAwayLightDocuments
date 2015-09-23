@@ -1,0 +1,91 @@
+Taistelu:
+=======
+- Tekoäly 30h
+- Grafiikkaa
+- Tasapainoitus 15h
+- Testiversio (AI:t vastakkain) 8h
+- Erikoiskyvyt kortteihin 20h
+- Korttipakkojen luominen esineistä jne. 10h
+- Vihollisten ja hahmon tuonti taisteluun 10h
+- Palkinnot 5h
+- Kuoleman käsittely 10h
+- Käyttöliittymä 20h
+- Paraneminen 5h
+- Haavat 8h
+- Aika 10h
+
+Kaikki hahmot:
+===========
+- 3D mallit / per hahmo
+  - Blokkaus 6-8h
+  - Mallinnus 12h
+  - luut animaatiota varten 10h
+  - unwrappaus 17h
+  - tekstuurit: Diffuse 10h
+  - animointi 15h - 70+h
+
+- Oma biomi 20h
+	
+Taisteluhahmot:
+-------------------
+- Perus stats 8h
+- Kortit 30h
+		
+
+- Pelaaja:
+			Esineet 30h
+                        Inventory 10h
+			(Rakennukset) 5 -100h
+			Abilitien kuvat
+			Ominaisuus/Ability pohja (kiinteät lukuarvot) 40h
+				Attack*
+				Defence*
+				HitPoint
+				Sneak
+				Perseption
+				(Fellowship)? työläs
+				Mana*
+				Fatique*
+				
+				* näkyvät
+				
+
+- Juonelliset viholliset: 20h
+			skaalautuu lvl:n mukaan 4h
+			Dialogi 100h
+			Drop table 5h
+			
+
+- Perus viholliset: 20h
+			skaalautuu etäisyyden mukaan 4h
+			Drop table 10h
+			
+		
+Ei-taisteluhahmot: 20h/kpl
+-----------------------
+- Mitä antaa
+- Mitä vaatii
+- Dialogi
+- Oma biomi (Arpoo tuleeko NPC huoneeseen kun sinne mennään ensimmäistä kertaa)
+- Tiedot (ulkoasu yms.)
+- Tarina
+		
+Maailma:
+=======
+- Aika järjestelmä 20h
+		Stop(Aika pyörii vain kun ollaan maailma ruudussa)
+- Huone järjestelmä 40h
+- Biomi järjestelmä 20h
+- Kaiken roinan spawni (roinan teko)10h
+- Juonen paikat 30h
+- (Landmark 5h/kpl + grafiikka)
+- Rakennus/NPC sijoitus järjestelmä 100h (Sama kuin henkilön rakennuksissa
+
+Game manager (vastaa pelistä):
+=======================
+- Siirtymät (kaikki, esim. käyttöliittymät auki, tieto taisteluun jne.) 20h
+- Tallennus 40h
+
+Muuta:
+=====
+- Tehdään yksi normaali peli, mutta tehdään arvot helposti skaalattaviksi

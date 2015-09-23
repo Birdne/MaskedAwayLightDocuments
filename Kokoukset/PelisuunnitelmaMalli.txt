@@ -1,0 +1,200 @@
+The Island - A survival mystery game
+Design Document
+
+Suunnittelijat:
+Anna Kolehmainen
+Artur Kreisberg
+Antti Lax
+Mikko Valkonen
+1. Johdanto
+1.1 Yleiskuvaus
+Peli on hahmon silmistä kuvattu (1st person) selviytymisseikkailu jossa pelaajan hahmo herää autiolta saarelta. Hahmon ensisijaisena tehtävänä on yrittää selviytyä, pelaajan täytyy pitää huolta siitä, että hahmolla on tarpeeksi ruokaa, juomaa ja suojaa. Pelin aikana hahmo tutkii saarta ja löytää sieltä useita johtolankoja tai muita esineitä, jotka kertovat tarinaa eteenpäin ja auttavat pelaajaa selviytymään.
+Pelin aikana pelaajalle selviää tarkemmin tarina mystisen saaren sekä pelin päähenkilön taustalla. Saarta on käytetty aiemmin USAn armeijan tukikohtana ja päähenkilö on ollut mukana suorittamassa outoja kokeita joiden sisältö paljastuu tarkemmin tarinan edetessä. Lopulta pelaajan päätettäväksi jää millaisen päätöksen pelin päähenkilö Adrian viimekädessä tekee: lähteäkö saarelta vai saattaako päätökseen se, mikä on jäänyt kesken.
+Pelissä on mukana sosiaalinen ja yhteisöllinen aspekti: Pelaaja voi saada pullopostia toisilta pelaajilta ja lähettää sitä itse mikäli hänellä on siihen resursseja, kuten pullo ja paperia. Pelaajat saavat vapaasti kirjoittaa lähetettävät viestit, ja peli kannustaa luovuuteen ja immersioon. Pullopostia tulee myös pelin sisäisesti ja niillä johdatetaan tarinaa eteenpäin.
+1.2 Visio
+Pelin tavoitteena on välittää pelaajalle tuntemuksia yksinäisyydestä ja oudosta tuttuuden tunteesta. Pelin visuaalinen ilme tasapainottelee trooppisen saaren upeiden maisemien ja hylätyn armeijan tukikohdan synkkyyden välillä. 
+1.2.1 Esikuvat
+
+Dear Esther (visuaalinen tyyli)
+Minecraft (oman tukikohdan rakentaminen, selviytyminen luonnon ehdoilla)
+Don’t Starve (tarvikkeiden kerääminen ja ravinnon hankkiminen)
+Lost (mystinen saari jossa on aiemmin ollut jotain toimintaa)
+Castaway (tunnelma yksinäisyydestä autiolla saarella)
+Half-Life 2 (tarinan kuljetus ympäristön kautta)
+Portal (tarinan kertominen ympäristön kautta)
+Stanley Parable (pelaaja ei tiedä varmaksi mitä oikeastaan on tapahtunut / tapahtuu)
+Fallout 3 (äänimaailma)
+Amnesia: The Dark Descent (tunnelma, valon käyttö, psykologiset vaikutukset)
+Mirror’s Edge (dynaaminen liikkuminen, esteiden ylittäminen)
+Far Cry 3 (maailman tutkiminen, ympäristö)
+Miasmata (ympäristö, selviytyminen)
+1.3 Kohdeyleisö ja teema
+Kohderyhmä:
+25-35 vuotiaat, jotka ovat kiinnostuneita tarinavetoisista, visuaalisista pelikokemuksista.
+
+Teema:
+Mysteerien täyttämä selviytymistarina
+1.4 Käytetyt alustat
+Peli suunnitellaan PC-alustalle. Peli rakennetaan Unity-pelimoottoria käyttäen ja 3D-mallit luodaan Blender-ohjelmalla.
+
+
+2. Toiminnallisuudet
+2.1 Pelimekaniikat
+Pelin keskeisiä mekaniikkoja ovat pelimaailmassa liikkuminen, ympäristön kanssa vuorovaikuttaminen sekä selviytyminen. Lisäksi pelissä on hahmon elintoimintoja kuvaavia arvoja jotka muuttuvat pelin kuluessa.
+2.1.1 Elintoiminnot
+Pelihahmolla on yleinen hänen energiaansa kuvaava mittari, joka kuvaa pelihahmon yleistä jaksamista sekä sykemittari. Energiamittaria pystyy täyttämään syömällä, juomalla ja nukkumalla/lepäämällä. Energiamittari ja sykemittari ovat ainoat pelissä olevat mittarit. Muuten pelihahmon elintoiminnot kuvataan ääntä ja kuvaa hyödyntämällä. 
+
+Esimerkiksi kun pelaaja alkaa juoksemaan hänen hengityksensä alkaa nopeutumaan ja muuttumaan raskaammaksi. Pelihahmo jaksaa juosta vain tietyn matkaa, jonka jälkeen hänen hengitys on nopeaa ja pinnallista, jos pelihahmo yrittää juosta tässä tilassa, hän ei pääse kuin muutaman askeleen, ennen kuin hän pysähtyy uudestaan. Pelihahmon hengitys tasaantuu pikkuhiljaa ja palaa lopulta normaaliksi, kun hengitys on täysin tasaantunut, pelihahmo pystyy taas juoksemaan täyden matkan.
+
+Kun pelaaja saa myrkytyksen hänen hengityksensä alkaa muuttumaan pikkuhiljaa katkonaisemmaksi, hänen näkökenttänsä alkaa sumenemaan ja näkökenttä alkaa heilahtelemaan. Nämä reaktiot alkavat pahenemaan, mitä kauemmin pelihahmo on myrkytyksen alaisena. Myrkytystila vaikuttaa myös pelin ambien-taustamusiikkiin tehden siitä painostavampaa mitä kauemmin myrkytystä on kestänyt. Myrkytyksen aikana koetut muutokset ovat erilaisia eri myrkytyksissä. Pelihahmo voi myös myrkytyksen johdosta alkaa hallusinoimaan ja kuulemaan ääniä kuten esimerkiksi aiemmin pelissä käytettyjä dialogin osia, kuiskuttelua sekä täysin tuntemattomia ääniä.
+
+Syömisen jälkeen energiataso alkaa laskemaan tasaisesti 6 tuntia viimeisen ruokailukerran jälkeen, jolloin hahmon voimat alkavat hitaasti hupenemaan. Jos pelaaja on 12 tuntia syömättä tai juomatta hänen energiatasonsa alkaa laskemaan kiihtyvällä vauhdilla. Kun hahmon voimat hupenevat hän ei jaksa juosta yhtä pitkän, lyödä yhtä kovaa tai ampumaan nuolella yhtä kauas, kuin hyvin syöneenä. Pelihahmon pitää myös nukkua vähintään 18 tunnin välein tai hänen tarkkuutensa (liittyy tähtäämiseen ja lyömiseen) alkaa kärsimään, maailman värit alkavat haalistumaan, hahmon syke muuttuu epävakaaksi ja hahmon tarkkaavaisuus laskee, jolloin ympäristön eläimet ilmestyvät kartalle vasta, kun ne ovat aivan pelaajan lähellä. 
+
+
+2.1.2 Liikkuminen
+Pelihahmo pystyy vapaasti liikkumaan kolmiulotteisessa maailmassa. Hahmon liikkumista kuitenkin rajoitetaan rajaamalla pelialuetta esimerkiksi veden, vuorien ja aitausten avulla.
+
+Käveleminen
+Pelihahmon normaali liikkumistila. Pelihahmo liikkuu tasaista tahtia pelaajan ohjaamaan suuntaan.
+
+Juokseminen/pyrähtäminen
+Kävelemistä kolme kertaa nopeampi tapa liikkua. Pyrähtäessä hahmon näkökenttä supistuu hieman. Hahmon stamina kuluu pyrähtäessä, mutta stamina palautuu hetken kuluttua.
+
+Ryömiminen
+Hahmo menee matalaksi ja liikkuu hitaammin. Ryömiessä hahmo pääsee paljon pienempään tilaan ja mahtuu paikkoihin joihin ei muuten pääsisi.
+
+Kiipeäminen
+Hahmo pystyy kiipeämään tikapuita ja köynnöksiä pitkin. Kiipeilyvälineet löydettyään hahmo voi myös kiivetä joitain tiettyjä kallionseinämiä pitkin.
+
+Hyppiminen
+Hahmo pystyy hyppäämään hyvin pienten esteiden yli, mutta ei kykene esimerkiksi ylittämään rotkoja.
+2.1.3 Vuorovaikutus
+Pelaaja vuorovaikuttaa ympäristön kanssa etsimällä ja keräämällä erilaisia esineitä, joiden avulla hahmo voi selviytyä ja tehdä erilaisia asioita. Objektit, joiden kanssa pelaaja voi olla vuorovaikutuksessa, näkyvät värillä korostettuna, kun pelaaja laittaa kursorin objektin päälle. Esineet pelaaja kerää inventaarioon. Inventaarioon pelaaja voi laittaa esineitä, jotka mahtuvat esimerkiksi reppuun. Pelaaja voi käyttää inventaariosta löytyviä esineitä vuorovaikutukseen näiden objektien kanssa. Kerättyjen tavaroiden määrää ei ole rajoitettu. Inventaario-näkymässä pelaajalla avautuu myös tavaroiden yhdistämiseen tarkoitettu työkalupenkki. Pelaaja voi korjata, yhdistää ja purkaa tavaroita tässä näkymässä.
+
+Pelaaja voi saada ja vastaanottaa pullopostia. Pelaaja voi lähettää pullopostia toisille pelaajille löydettyjen kirjoitusvälineiden ja tyhjien pullojen avulla. Pullojen määrä on rajoitettu jokaisella pelikerralla. Viestien kirjoittaminen tapahtuu kursorilla kirjoittamalla/piirtämällä yhdelle A4-kokoiselle paperille palaneen puun nokea käyttäen. Viestit ajautuvat saaren rannoille, joista pelaaja voi löytää niitä. Pulloja on mahdollista löytää vain yksi kerrallaan ja ajallisesti niiden löytämisen välissä vähintään tunti peliaikaa. Viestit välittyvät toisille pelaajille sattumanvaraisesti pelipalvelimen kautta.
+
+2.1.4 Selviytyminen
+Aluksi pelaajan täytyy kerätä ruokaa ja juomaa saarelta selviytyäkseen. Hahmolla on energiamittari, joka vaikuttaa hahmon energiatasoon. Syömällä ruokaa ja juomalla nesteitä energiataso kohoaa. Energiataso vajoaa hitaasti koko ajan. Liikkuminen vie enemmän energiaa kuin paikallaolo. Juokseminen ja raskas työ vievät enemmän energiaa kuin kävely. Pelihahmo ei jaksa juosta rajattoman pitkään vaan esimerkiksi minuutin ajan kerralla.
+
+Pelaajalla on saaren kartta, jota pelaaja voi tarkastella. Tutkimalla saaren eri alueita karttaan piirtyy tutkitut alueet saaresta. Pelaaja voi tehdä merkintöjä karttaa löydettyjen kirjoitusvälineiden avulla.
+
+Metsästys
+Pelaaja voi metsästää erilaisia eläimiä. Hahmo voi hyödyntää jousta ja tuliaseita ampumalla riistaa etäältä, kohtuullisen turvallinen, mutta epävarma tapa saada ruokaa. Syöttien ja ansojen avulla, tämä toimii vain pieneläimiin, jolloi saadun lihan määrä on pientä. Ansojen avulla metsästäminen on kaikkein turvallisinta, mutta saatu lihamäärä on pientä ja pedot saattavat syödä saaliin. Hyökkäämällä päälle, joka on kaikkein vaarallisin tapa metsästää ja toimii vain eläimiin, jotka ovat hitaita tai, jotka hyökkäävät pelihahmon kimppuun lähestyttäessä.
+
+Kalastus
+Pelihahmo voi käyttää vapaa ja syöttejä kalastukseen. Sopivia syöttejä pelaaja voi löytää ja kerätä viidakosta. Parhaat mahdollisuudet kalan pyydystämiseen ovat ajat ennen aurinkonlaskua sekä sarastuksen aikaan. Yöllä liikkuvat ja saalistavat pedot tekevät illalla kalastamisesta vaarallista, sillä ne voivat hyökätä takaapäin kalastavan pelaajan kimppuun. Aikaisin aamulla kalastamaan lähteminen on vaarallista, koska silloin viidakon eläimet ovat aktiivisimmillaan ja hankkimassa itselleen ruokaa. Kalastamiseen voi käyttää erilaisia syöttejä. Tavallisia matoja voi kaivaa maasta, mutta yöllä viidakosta kerättävät kiiltomadot ovat parhaita syöttejä, mutta niiden hankkiminen on vaarallisempaa ja aikaa vievää. 
+
+Piiloutuminen
+Pelihahmo voi piiloutua aggressiivisilta eläimiltä erilaisten objektien, kuten seinien, kivien ja pensaiden taakse. Nämä eläimet havaitsevat pelaajan, jos välissä ei ole näkökenttää peittävää objektia. Jos aggressiiviset eläimet liikkuvat lähiympäristössä niin pelaaja havaitsee ne äänen perusteella lähiympäristön näyttävällä pienoiskartalla. Paikallaan olevat aggressiiviset eläimet eivät näy pelaajan pienoiskartalla. Pelaajan havainneet aggressiiviset eläimet näkyvät pienoiskartalla punaisina ympyröinä ja viholliset, jotka eivät ole havainneet pelaajaa näkyvät vihreinä ympyröinä. Neutraalit eläimet näkyvät pienoiskartalla harmaina ympyröinä.
+
+2.2 Pelihahmo
+Kiinalaisten yritykset aivopestä vankeja Korean sodan aikana ja hänen oman isänsä sotapsykoosi saivat  Adrian Cooperin jo nuorena kiinnostumaan psykologiasta ja ihmismielen hauraudesta. Rikkaan perheen kasvattina hänellä oli mahdollisuus toteuttaa unelmansa. Hän suoritti yliopisto-opintonsa erinomaisin arvosanoin ja teki laajaa tutkimusta sotilaiden mielenterveydestä Vietnamin sodan aikana. Tutkimuksessa Cooper teorisoi, että on mahdollista vahvistaa sotilaiden henkistä kestävyyttä tietyillä lääkkeillä ja tekniikoilla. Tämä johtopäätös herätti Yhdysvaltain puolustusvoimien päällystössä mielenkiintoa ja kenraali Bovington, Adrianin isän vanha tuttu, otti Cooperiin yhteyttä. Kenraali tarjosi Adrian Cooperille mahdollisuutta testata menetelmiä tutka-asemalla keskellä Tyyntä valtamerta. Cooper suostui ja aloitti useita kuukausia kestävät kokeet, joissa hän yritti pitää eristyksessä olevan tutka-aseman henkilökunnan mieliä virkeinä.
+
+Yhtenä päivänä herättyään hän huomasi tukikohdan olevan hylätty ja ränsistynyt. Cooperin viimeiset muistikuvat vaikuttavat olevan vuosikymmenten takaa. Hän alkaa tutkia saarta ja selvittämään, mitä oikein on tapahtunut. Samalla hänen on yritettävä ensimmäistä kertaa elämässään selviytyä keskellä karua luontoa. Takaumat alkavat piinata häntä, näyttäen tuntemattomia ja tuttuja aikakausia, ihmisiä ja hetkiä.
+Cooper rakentaa tukikohdasta omaa kotia ja oppii pärjäämään. Samalla hän huomaa paljon outoja asioita. Saari tuntuu muuttuvan, ikään kuin elävän omaa kiertoaan. Hän törmään outoihin pulloposteihin, jotka ovat enemmän tai vähemmän hyödyllisiä, mutta kuitenkin hänen omalla käsialallaan kirjoitettuja. Adrian alkaa pikkuhiljaa epäilemään omaa mielenterveyttään ja huomaa olevansa jonkun tuntemattoman persoonan hallitsema. Hän käy epätoivoista sisäistä kamppailua yrittäen vapautua saaresta, johon hän on alkanut kuitenkin kiintyä.
+
+Lopulta pelaaja valitsee Adrian Cooperin kohtalon, kaiken pelin aikana rakennetun hylkäämisen ja pakenemisen tai saarelle pysyvästi jäämisen ja vankeuden. (Symboliikka: saari ja tukikohta heijastavat Cooperin mieltä, jota hän yrittää ottaa takaisin haltuun. Hänen on kuitenkin siirryttävä lopussa eteenpäin.)
+
+2.3 Ohjaus
+Liikkuminen:
+Pelihahmoa ohjataan näppäimistöllä. Hahmo liikkuu kameran suhteen suoraan eteenpäin W-näppäimellä. Hahmo liikkuu kameran suhteen oikealle sivulle D- näppäimellä ja vasemmalle A-näppäimellä. S-näppäimellä hahmo liikkuu suoraan taaksepäin. Hahmon kääntäminen suoritetaan kameraa kääntämällä, eli hiirtä liikuttamalla. Hahmo hyppää välilyöntiä painamalla. Hypyn pituus riippuu pelaajan vauhdista hyppyhetkellä. Pelaaja voi alkaa ryömimään Alt painikkeella. Ryömimisen aikana pelaajaa liikutetaan samaan tapaan kuin kävellessä, mutta hyppääminen ei ole mahdollista. Kiipeäminen aloitetaan klikkaamalla kiivettävää kohdetta, jonka jälkeen ylöspäin liikutaan W:llä, alas S:llä, oikealle D:llä, ja vasemmalle A:lla. Kiivettäessä ei voi hypätä, eikä kiivettävältä alueelta voi A:lla ja D:llä tippua.
+
+Taistelu:
+Pelaaja voi joutua taisteluun saaren villieläinten hyökätessä hänen kimppuunsa. Eri vihollisille on määritelty eri energiataso, joka määrää sen, kuinka vaikea ne on tappaa. Eri aseet aiheuttavat eri määrän vahinkoa vihollisiin. Vihollisten lyönnit ja puremat kuluttavat pelihahmon energiatasoa, joka huonontaa hahmon lyöntivoimaa. 
+
+Lyöminen:
+Pelihahmo lyö vasenta hiiren nappia painettaessa ja torjuu iskuja painamalla oikea hiiren nappi pohjaan. Pelaaja voi käyttää lyömäaseina esimerkiksi viidakkoveistä, puukkoa, metalliputkea sekä sorkkarautaa.
+
+Ampuminen / heittäminen:
+Pelaaja voi ampua jousipyssyllä ja tuliaseella. Kun pelihahmo ottaa jousen tai tuliaseen käteensä painamalla vasenta hiiren nappia pohjassa siirrytään ampumistilaan. Ampumistilassa voi tähdätä liikuttamalla hiirtä. Kun vasen hiiren nappi päästetään irti pelihahmo ampuu. Jousella ammuttaessa, mitä kauemmin jousi on viritettynä, sitä huonommin nuoli lentää, koska pelihahmon kädet väsyvät. Aseella ammuttaessa, mitä kauemmin aseella tähtää, sitä epätarkempaa siitä tulee, koska pelihahmon kädet alkavat täristä aseen kannattelun rasituksesta. Pelihahmo voi myös heittää kiviä. Kun pelaaja heittää kiven, vasenta hiiren nappia pohjaan painettuna päästään samalla tavalla tähtäys tilaan kuin jousilla ja aseella ammuttaessa, mutta muuten tämä toimii käänteisesti, mitä kauemmin painaa vasenta nappulaa pohjaan, sitä pidemmälle kivi lentää. Tällä on tietysti rajansa, jonka jälkeen lentomatka alkaa taas lyhentymään, koska kiven paino rasittaa pelihahmoa.
+
+Kamera:
+Kameraa liikutetaan hiirellä. Kamera kuvaa hahmon näkökenttää. Hahmo voi katsella kameran avulla ympärilleen. 
+
+Vuorovaikutus:
+Hahmo pystyy vuorovaikuttamaan ympäristönsä kanssa poimimalla esineitä, avaamalla ovia, kansia yms., siirtämällä esineitä ja asettamalla esineitä. Tämä tapahtuu hiiren oikealle painikkeella ja siitä aukeavalla toiminta ikkunan avulla, jonka aukiollessa kamera ei liiku ollenkaan.
+
+2.3.1 Käyttöliittymä
+Pelinäkymässä on koko ajan esillä pienoiskartta, josta näkee lähiympäristön eläimet, niiden sijoinnin, ovatko ne neutraalleja vai aggressivisia ja sen, ovatko he havainneet pelaajan. Pelinäkymässä on myös esillä pelihahmon käyttämä laite, jossa on eri näkymiä. Päänäkymässä on esillä pelihahmon syke, kello ja päivän aikana kuljettu matka. Toisessa näkymässä on pelaajan energiataso kuvattuna pulssina sekä tekstinä.
+
+Esimerkki käyttöliittymästä. Vasemmalla monitoimilaite ja oikealla “tutka”
+
+
+Hahmon energiaa kuvataan ECG-käyrällä sekä hahmon tilaa kuvaavalla tekstillä.
+2.4 Pelaajan tavoitteet
+Pelaajalla on ydintavoitteena selviytyä hengissä saarella. Pelin lopetustavoitteina on joko päästä pois saarelta tai asettua sinne pysyvästi asumaan.
+2.5 Pelin tallentaminen
+Uutta pelikertaa aloitettaessa pelaaja kirjoittaa tallennukselle yksilöllisen nimen. Peli tallentuu automaattisesti, ja mikäli hahmo kuolee, peli jatkuu edellisestä tallennustilasta. Kun pelaaja on myrkytyksen alaisena peli ei tallennu lainkaan. Jos pelaaja kuolee myrkytykseen peli jatkuun viimeisimmästä tallennuksesta ennen myrkytystä. Jos pelaaja hoitaa myrkytyksen, peli tallentuu ja sen jälkeen automaattinen tallennus jatkuu normaalisti.
+
+3. Pelimaailma
+
+
+3.1 Kentät ja alueet
+Peli sijoittuu subtrooppiselle, lähes asuttamattomalle ja hylätylle Tyynenmeren saarelle, joka toimi aiemmin armeijan tukikohtana. Pelimaailma on realistinen 3D maailma. Saari koostuu 4 eri alueesta, joissa kussakin on useita tutkittavia paikkoja.
+3.1.1 Sademetsä/viidakko
+Suurin osa saaresta on metsän peitossa. Metsästä voi löytää ruokaa eri hedelmien, juurien ja pähkinöiden muodossa. Metsässä on myös vaaroja, kuten käärmeitä, hämähäkkejä ja myrkyllisiä ötököitä. Metsässä on ränsistynyt maja (kartalla R), joka toimii pelaajan tukikohtana ja suojana. Metsästä löytyy myös armeijan vanhan tukikohdan rauniot (kartalla T), joiden sisältä päähenkilö herää pelin alussa. Öisin viidakossa voi kuulla monenlaisia ääniä, jotkin näistä äänistä voivat johdattaa pelaajan maanalaisiin luoliin.
+3.1.2 Ranta
+Koska on kyse saaresta rantaviivaa löytyy hyvin paljon. Saarella on muutama hiekkaranta ja yhdellä niistä on ränsistynyt vene (kartalla V), jonka pelaaja voi saarelta löydettyjen tavaroiden avulla kunnostaa ja päästä pois saarelta. Rannalla pelaaja voi kalastaa, lähettää pullopostia ja myös saada sitä.
+3.1.3 Hylätty armeijan tukikohta (kartalla T)
+Armeijan tukikohta sijaitsee viidakossa. Se koostuu muutamasta maanpäällisestä rakennuksesta ja useammasta maanalaisesta kerroksesta. Tukikohdasta pelaaja voi löytää hyödyllisiä tavaroita erityisesti veneen korjaamista varten.
+3.1.4 Vuoristo, luolia
+Saarella on yksi iso vuori ja saaren itäosa nousee korkeaksi jyrkänteeksi, joka luo suojaisan poukaman saaren itäpäähän, johon pääsee vain laskeutumalla jyrkänne alas. Suurella vuorella on erilaisia luolia ja paikkoja, joista voi löytää hyödyllisiä esineitä ja kasveja sekä edistää tarinaa. Luolia löytyy saaren eri osista, sekä maanalaisia tunneleita.
+
+Osaan saaren alueista ei pääse käsiksi ennen kuin on löytänyt esineen, joka auttaa pelaajaa pääsemään näille alueille. Esimerkiksi pelaaja tarvitsee vuorikiipeily tarvikkeet jotta hän pääsisi itäiseen poukamaan, jossa vene sijaitsee. Tai pelaajan pitää löytää tiirikointi välineet tai avaimet päästäkseen tukikohdan tukikohdan kaikkiin huoneisiin. Samoin, jotta pelaaja voi käyttää kaikkia saarelta löytyviä kasveja hyväkseen, hänen pitää ensin löytää niistä tietoa kirjoista.
+3.2 Eläimet
+Saarella esiintyviä eläinlajeja ovat jänikset, peurat, villisiat, villikoirat, erilaiset käärmeet ja  hämähäkit, puumat, tiikerit, apinat, hait sekä merikalat ja gorillat. 
+
+
+Neutraalit- ja ruokaeläimet
+Eläimet, jotka eivät hyökkää pelihahmon kimppuun. Niiden lihaa voi syödä. (esim. jänikset, peurat, apinat, merikalat, ) 
+
+Aggressiiviset eläimet
+Eläimet, jotka hyökkäävät pelihahmon kimppuun, jos pelihahmo on niiden näköpiirissä. Nämä eläimet voivat vakavasti vahingoittaa tai tappaa pelihahmon. Niiden lihaa voi myös syödä ja niiden nahkoja voi hyödyntää. (esim. villisiat, isot kissaeläimet, gorillat, villikoirat, hait, jne.)
+
+Myrkylliset eläimet
+Pieneläimet, jotka eivät kelpaa syötäväksi. Ovat aggressiivisia ja purevat/pistävät, kun pelaaja menee liian lähelle niitä. Puremista ja pistoista johtuvista myrkytyksistä voi parantua syömällä lääkekasvia, joka tehoaa tämän tyyppisiin myrkytyksiin. (esim. erilaiset käärme, hämähäkki ja hyönteislajit.)
+
+
+3.3 Kasvit
+Ruokakasvit
+Kasveja, joita pelihahmo voi löytää ympäristöstä, kasvattaa ja syödä.
+
+Myrkkykasvit
+Kasvit, jotka ovat myrkyllisiä eri asteissa. Tämän tyyppisen kasvin syönnistä johtuvan myrkytyksen voi parantaa syömällä oikeaa lääkekasvia.
+
+Lääkekasvit
+Kasvit, joilla on itsessään tai muihin kasveihin yhdistettynä erilaisia parantavia ominaisuuksi.
+
+Hyötykasvit
+Kasvit, joista voi tehdä erilaisia hyödykkeitä, kuten punoa koreja, keittää liimaa jne.
+
+Neutraalit kasvit
+Näillä kasveilla ei ole mitään erikoisia ominaisuuksia.
+3.4 Tunnelma
+Saarella ei ole pelaajan lisäksi muita ihmisiä. Pelin tunnelma on silti jännittynyt, joka syntyy juuri yksinäisyydestä. Kun pelaaja kulkee saarella hänen ympäriltään kuuluu eläinten, metsän ja luonnon ääniä, jotka pitävät pelaajan varpaillaan.
+3.5 Pelin tarina
+3.5.1 Taustatarina
+Saari oli kylmän sodan aikaan eräs USAn armeijan tukikohdista, mutta hylättiin lopulta budjetin loputtua (tutka-aseman rippeitä, säilykkeitä jne. kaivamalla maastoa?). Sivistyksen jäänteet ovat nyt luonnon valtaamia, mutta alueelta löytyy edelleen käyttökelpoisia työkaluja / esineitä. Saarella on myös tehty joitakin tutkimuksia, joiden sisältö selviää pelaajalle tarinan edetessä
+3.5.2 Narraatio
+Päähenkilö
+Tarinan kertojana toimii pääasiallisesti pelin päähenkilö. Hahmo pitää lyhyitä monologeja tietyissä tarinan kannalta tärkeissä paikoissa, ja kuljettaa pelin tarinaa eteenpäin.
+
+Esimerkki monologista ja sen tyylistä:
+
+[Hahmo saapuu ensimmäistä kertaa tukikohdan laboratorioon]
+“I didn’t know why I felt like I knew where I was heading. The abandoned laboratory seemed like there hadn’t been anyone there for a long time, yet I felt like I knew my way around the place. What had happened here? Was I here as well?”
+
+
+Takaumat
+Osa pelin narraatiosta tapahtuu hahmon kokemien takaumien kautta. Takaumat ilmaistaan välähdyksen kautta tapahtuvana siirtymänä sekä seepia-filterillä. Myös kaikki pelin visuaaliset käyttöliittymäelementit katoavat takaumien ajaksi. Takaumissa pelaajalle näytetään tapahtumia ajalta ennen peliä, vielä kun saarella oli aktiivista toimintaa.
+
+Johtolangat
+Hahmo löytää pelin aikana erilaisia muistioita, nauhoitteita sekä valokuvia joiden kautta pelin tarinaa kerrotaan pelaajalle. Näiden avulla hahmo saa selville tarkemmin useiden vuosien takaisista tapahtumista ja pelaaja saa uusia johtolankoja mihin pitäisi seuraavaksi kenties mennä.
+
+Pulloposti
+Pulloposti on samalla sekä keino kuljettaa pelin narratiivia, että mahdollisuus pelaajien väliseen vuorovaikutukseen. Pullopostin kautta pelaaja voi lähettää vinkkejä tai mahdollisesti myös hämäyksiä muille pelaajille. Tarkoituksena on tuoda pelaajille tunnelma siitä että yksinäisellä ja autiolla saarella on kuitenkin mahdollisuus yrittää kommunikoida ulkopuolisten kanssa. Hahmo löytää rannalta myös muutaman ennalta määritellyn pullopostin jossa joku muu selviytyjä on yrittänyt etsiä epätoivoisesti pelastusta. Tämä hahmo löytyy myöhemmin kuolleena jostain.
+4. Rakenne
+4.1 Pelin kulku
+Peli alkaa, kun päähenkilö herää hylätystä armeijan tukikohdasta. Sieltä päähenkilö lähtee tutkimaan ympäristöään. Selviytyminen tulee ensimmäisenä tarpeena esille, päähenkilön pitää löytää itselleen ruokaa ja juomaa pysyäkseen hengissä. Tutkimalla pelimaailmaa päähenkilö löytää erilaisia asioita ja esineitä, jotka edistävät tarinaa ja antaa pelaajalle pääsyn uusille alueille. Pelissä on kaksi vaihtoehtoista lopetusta. Pelaaja voi kunnostaa saarelta löytyvän veneen ja päästä siten pois saarelta tai hän voi kunnostaa saarelta löytyvän majan, jolloin peli loppuu, kun maja ja puutarha on kunnostettu viimeiseen asti.
+5.  Äänimaailma
+Äänimaailma koostuu pääosin ympäristön äänistä sekä ambientista taustamusiikista. Saarelta löytyvän radion välityksellä voi myös lisätä musiikkia peliin.
