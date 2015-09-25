@@ -1,0 +1,50 @@
+Viikko 3 raportti
+
+	Koko ryhmä: 
+		- Päätimme ryhmän nimestä. Pysymme Embertainmentissä.
+		- Sovimme tiistaina, mitkä asiat tulee olle proof of
+		conceptia varten valmiina (liikkuminen, lattiat ja seinät,
+		biomit, viholliset, törmääminen viholliseen, siirtyminen
+		maailman ja taistelun välillä ja extrana leirinuotio).
+		Saimme tämän kaiken tehtyä.
+		
+	Anna: Työstin pelisuunnitelmaa ja luin kirjoja aiheeseen 
+	liittyen. Loin Githubiin repon projektin dokumentteja varten.
+	Loin pelille facebook sivun. 
+	
+	Vesa: teki mailmankarttaa ja inventoryn raakiletta
+	
+	JanneP: Teki tekoälyn raakileen.
+	
+	Tero: added some UI textures and started the AI sides process 
+	turn; now does the deckbuilding based on characters and will 
+	allow custom decks; decks added and tweaked how battlecontrollerscript, 
+	deckbuilder and sides/characters communicate with each other. 
+	Now the deckbuilder is not so dependant on the battleside ideal 
+	and strictly requires the characters to work with which should 
+	help with custom player decks; working proof of concept!; 2d fight 
+	scene mock up doen; campfire that heals; killed conflight(conflict) 
+	in scene;
+	
+	Juho: Tehty kaksi vihollisen placeholderia, alustava tutkielma 
+	mahdollisista vihollismalleista, viisi placeholder-proppia ja 
+	tämän lisäksi yksi isompi proppi-elementti. Lisäksi tehty alustavaa 
+	työtä taistelukäyttöliittymän havainnekuvia varten.
+	
+	AK: Teki placeholdereita n. 7kpl, tiimilogon, viimeisteli 2 concept/moodarttia
+	
+	JanneK: Kirjoitti taistelumekaniikkadokumentin (drive:/concept/combat/), 
+	aloitti korttipakkojen ja tagien suunnittelun.
+	
+Ensi viikolla:
+	TaisteluTimer -Tero
+	AI testi - JanneP
+	Inventory, koodi -Vesa
+	Inventory, tavaroita ja ulkoasu -AK
+	Tarina -Anna
+	Tagit kortteihin, suunnittelu -JanneK
+	Tagit kortteihin, koodi -Tero
+	Taistelun havainnointi -Juho
+	Facebook sivun kansikuva -Juho
+	Taistelun käyttöliittymä -Tero
+	Taustoja taisteluun -AK
