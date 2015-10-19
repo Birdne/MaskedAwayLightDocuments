@@ -1,0 +1,21 @@
+Viikko 5 raportti (9.10)
+		
+	Anna: Työsti pelisuunnitelmaa. Kävimme läpi Jannen kanssa maailmaan 
+	tulevat esineet ja "kaveri" hahmot. Tarkennettiin haavoja, tageja ja
+	effectejä.
+	
+	Vesa: Korjasi bugit prefabcreator seinienspawnauksesta. Equipment-
+	olioluokka ja perusperus pohjaa tavaroiden equippaamiselle.
+	
+	JanneP: AI testattu ja korjailtu ja lisätty uutta AI pohjaa.
+	
+	Tero: AITesterin hienosäätöä, CSV-parseri ja itse tiedostojen latausta 
+	erinäisistä tiedostoista
+	
+	Juho: Toteutti kalastajan placeholder-mallin, taistelun käyttöliittymän 
+	suunnittelua, Paperdollin placeholder, ääni- ja tarinakokous, coverkuvan 
+	maalausta, referenssimateriaalin etsintää.
+	
+	AK: Teki placeholdereita n. 7kpl, tiimilogon, viimeisteli 2 concept/moodarttia
+	
+	JanneK: Tasapainotti taistelun kortteja ja teki Annan kanssa pelisuunnitelmaa

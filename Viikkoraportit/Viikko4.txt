@@ -1,0 +1,16 @@
+Viikko 4 raportti (2.10)
+		
+	Asioita tapahtui :D
+	
+	Liittyen:
+	TaisteluTimer -Tero
+	AI testi - JanneP
+	Inventory, koodi -Vesa
+	Inventory, tavaroita ja ulkoasu -AK
+	Tarina -Anna
+	Tagit kortteihin, suunnittelu -JanneK
+	Tagit kortteihin, koodi -Tero
+	Taistelun havainnointi -Juho
+	Facebook sivun kansikuva -Juho
+	Taistelun käyttöliittymä -Tero
+	Taustoja taisteluun -AK

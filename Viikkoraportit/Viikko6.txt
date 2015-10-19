@@ -1,0 +1,23 @@
+Viikko 6 raportti (16.10)
+		
+	Tero: Skill tree:tä, pelaajan kehitys, equip, hahmon attack 
+	valuen mukainen attack
+	Vesa: Itereraktiivisia objecteja, inventoryn sisällön tallennus 
+	ja lataus, skaalaus ja kameran kääntö
+	Janne P: Taistelukäyttöliittymää
+	A-K: inventaario valikon luonnokset, Nu-Nu-Nukun suunnittelu
+	Juho: Cover kuva, aurinkokiven suunnittelu ja toteutus, naamiotutkielmia, 
+	päähahmon alustavaa suunnittelua
+	Janne K: Tasapainotestauksen ensimmäinen vaihe loppuun, tagi systeemi 
+	kasassa, hahmonkehitys aloitettu
+	Anna: hahmejon ja paikkojen kuvaus
+	
+Ensi viikolla:
+	Tero: Skill tree:tä, pelaajan kehitys, equip, hahmon attack
+	Vesa: intervaktiivisten olioiden jatko, tallennuksen siirto 
+	gameManagerin alle, equipmenttien tallennus ja lataus
+	Janne P: Taistelukäyttöliittymä ja inventaario screen
+	A-K: Hahmojen suunnittelu
+	Juho: aurinkokiven viimeistely, hahmosuunnittelu
+	Janne K: hahmonkehitys aloitettu
+	Anna: pahikset ja kaverit
