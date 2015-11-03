@@ -1,3 +1,17 @@
 Viikko 7 raportti (23.10)
 
+	Tero: maailman olioiden lataamista tiedostoista ja Interaction-luokka
 	
+	Vesa: maailman olioiden lataamista tiedostoista
+	
+	Janne P: Taistelukäyttöliittymää
+	
+	A-K: Suunnitelmat Nu-Nu-Nukusta, Chiko-Chikosta ja Aman-Us:sta
+	
+	Juho: Aurinkokivi teksturoitu ja Githubissa. 3d-mallien import-ongelmien ratkontaa. 
+	Referenssimateriaalia päähahmosta, Gongalastaj ja Unga-Chasta. Tutkielmia hahmoihin 
+	liittyen. Thumbnaileja hahmoista.
+	
+	Janne K: Hahmon kehityksen suunnittelua
+	
+	Anna: NPC suunnittelut

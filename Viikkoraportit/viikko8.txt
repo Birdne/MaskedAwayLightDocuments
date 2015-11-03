@@ -1,0 +1,44 @@
+Viikko 8 raportti (30.10)
+
+    Koko ryhmä:
+		Päätimme keskityyä taistelun loppuunhiomiseen, joten graafikot
+		keskittyvät vihollisten suunnitteluun ja spriten tekemiseen niistä.
+		Testaamme taistelukäyttöliittymää viikonlopun aikana ahkerasti, jotta
+		tiedämme mikä toimisi parhaiten ja miten osaset asetellaan.
+		
+	Tero: Ei muista
+	
+	Vesa: Tallennus ja lataus toimimaan uuden systeemin kanssa. 
+		Seinien tekstuuri määräytymään naapurihuoneen mukaan.
+	
+	Janne P: Taistelukäyttöliittymän pari eri versiota
+	
+	A-K: NPC ja vihujen suunnittelu
+	
+	Juho: NPC ja vihujen suunnittelu
+	
+	Janne K: Varusteiden suunnittelua
+	
+	Lari: Opetellut ohjelman (logic pro) käyttöä
+	
+	Anna: Pahisten kevyttä suunnittelua ja paljon sairastamista
+	
+Ensi viikolla
+
+	Tero: Partikkeli efectit yms. kivaa joka tekee pelistä nätin. 
+		Animaatio taistelun alkuun. Skill nodet.
+	
+	Vesa: Equip tallennus, interactio objectien kanssa vuorovaikutus, 
+		esine spawn koon mukaan
+	
+	Janne P: Taistelukäyttöliittymä
+	
+	A-K: Vihu suunnittelu
+	
+	Juho: Vihu suunnittelu
+	
+	Janne K: Vihu stats suunnittelu
+	
+	Lari: Metsän liikkumisäänet, musiikin teko
+	
+	Anna: Tarinan alku
