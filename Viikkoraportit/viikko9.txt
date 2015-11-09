@@ -1,0 +1,25 @@
+Viikko 8 raportti (6.11)
+
+Päätettiin tehdä vain taistelun pohjalta taistelupeliä, jossa 
+main menusta päästään ikkunaan, jossa valitaan hahmot joilla 
+taistellaan. Tässä ikkunassa pääsee myös muokkaamaan taisteluun 
+tulevia hahmoja vapaasti character (eqiup) ikkunassa. Kun hahmoja 
+on muokattu mieluisiksi voi aloittaa taistelun. Taistelusta 
+palataan sitten takaisin hahmojen valintaan. Hahmoille ei vielä 
+tule kehittymistä, mutta se on vielä mahdollisuus.
+
+Muokattavat
+-----------
+ - Equipment (character) ruutu
+ - Skill tree
+ - Taistelu GUI
+
+Uusia
+-----
+ - Taistelu game manager
+ - Taistelijoiden valinta ruutu
+ - Main menu
+
+Muut tehtävät
+-------------
+ - Effectit
