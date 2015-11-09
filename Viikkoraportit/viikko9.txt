@@ -1,4 +1,4 @@
-Viikko 8 raportti (6.11)
+Viikko 9 raportti (6.11)
 
 Päätettiin tehdä vain taistelun pohjalta taistelupeliä, jossa 
 main menusta päästään ikkunaan, jossa valitaan hahmot joilla 
@@ -23,3 +23,25 @@ Uusia
 Muut tehtävät
 -------------
  - Effectit
+ 
+Mitä tein
+---------------
+Tero:  Main Menu, skill treen jako
+Vesa: opetellut blenderiä ja käänsi mailmankartan vastaamaan mailmaa
+Janne P: Super melee screen, koodasi grid layout scaler
+A-K: Vihu suunnittelu
+Juho: Vihu suunnittelu
+Janne K: Vihu suunnittelu ja statsit
+Lari: Valikon pelimusiikkia
+Anna: Tasitelukäyttöliittymän testaus
+
+Ensi viikolla
+---------------
+Tero:  Super meleen työstä
+Vesa: 3D mallien teko
+Janne P: AI ja taistelu ja supermelee UI
+A-K: ase suunnittelu
+Juho: Vihujen spriteja
+Janne K: vihujen satitus
+Lari: Main menu musiikin jatko
+Anna: Testauksen jatko ja muuta mukavaa
