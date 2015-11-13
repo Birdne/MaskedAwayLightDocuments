@@ -1,0 +1,23 @@
+Viikko 10 raportti (13.11)
+
+Mitä tein
+---------------
+	Tero:  Super melee ja CSV parserin parantelu
+	Vesa: 3D mallien opettelu
+	Janne P: Käyttöliittymien työstä (super melee, battle), AI, animaation suunittelu
+	A-K: Aseiden suunnittelu
+	Juho: Vohollisten stylesheets
+	Janne K: Vihollisten statsit
+	Lari: Valikko ja taistelu musiikin työstö
+	Anna: Paperin pyörittelyä ja peli testausta
+
+Ensi viikolla
+---------------
+	Tero:  Super meleen jatko, buffit ja debuffit
+	Vesa: oikeiden 3D mallien työstö, mahdollisesti muuta
+	Janne P: AI:n passaus, animaatioiden opiskelu
+	A-K: Käyttöliittymä elementit
+	Juho: Vihu spritet
+	Janne K: Työkkäri koulutus
+	Lari: Taistelun äänien työstä (kalahdukset jne.)
+	Anna: samaa vanhaa
