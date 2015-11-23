@@ -13,7 +13,7 @@ Mitä tein
 
 Ensi viikolla
 ---------------
-	Tero:  Super meleen jatko, buffit ja debuffit
+	Tero: Super meleen jatko, buffit ja debuffit
 	Vesa: oikeiden 3D mallien työstö, mahdollisesti muuta
 	Janne P: AI:n passaus, animaatioiden opiskelu
 	A-K: Käyttöliittymä elementit

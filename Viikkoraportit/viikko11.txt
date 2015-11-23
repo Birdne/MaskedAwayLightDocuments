@@ -1,0 +1,23 @@
+Viikko 11 raportti (20.11)
+
+Mitä tein
+---------------
+	Tero: Super meleen jatko, buffit ja debuffit
+	Vesa: oikeiden 3D mallien työstö, Luan tutkiskelu
+	Janne P: käyttöliittymien työstö, animaatioiden opiskelu
+	A-K: Käyttöliittymä elementit
+	Juho: Vihu spritet
+	Janne K: Työkkäri koulutus
+	Lari: Taistelun äänien työstä (kalahdukset jne.)
+	Anna: samaa vanhaa
+
+Ensi viikolla
+---------------
+	Tero: Super meleen jatko, buffit ja debuffit
+	Vesa: oikeiden 3D mallien työstö, mahdollisesti muuta
+	Janne P: AI:n passaus, animaatioiden opiskelu
+	A-K: Käyttöliittymä elementit
+	Juho: Vihu spritet
+	Janne K: Työkkäri koulutus
+	Lari: Taistelun äänien työstä (kalahdukset jne.)
+	Anna: samaa vanhaa
